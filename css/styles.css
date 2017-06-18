@@ -11,7 +11,7 @@
     Gulp and send to the /css folder which is then loaded on the page.*/
 
     body {
-    font-family: 'Lato', sans-serif;
+    font-family: Helvetica, Lucida , sans-serif;
     font-size: 16px;
 }
 body.active {
@@ -80,7 +80,8 @@ header {
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;
     -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s
+    animation-duration: 0.75s;
+
 }
 header ul {
     display: inline-block;
@@ -89,7 +90,8 @@ header ul {
     padding: 10px;
     margin: 0;
     border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+    border-bottom-left-radius: 4px;
+    float: right;
 }
 header li {
     display: inline-block
@@ -161,6 +163,7 @@ footer {
     margin: 0;
     color: #74808a;
     float: left;
+    padding: initial;
 }
 
 .top {
@@ -184,7 +187,8 @@ footer {
 }
 .social ul {
     margin: 5px 0 0 0;
-    padding: 0
+    padding: initial;
+    float: right;
 }
 .social li {
     display: inline-block;
@@ -273,7 +277,7 @@ footer {
     color: #fff;
     font-weight: 900;
     font-size: 5em;
-    text-transform: uppercase;
+    text-transform: initial;
     letter-spacing: 0.05em;
     line-height: 0.9em;
 }
@@ -291,7 +295,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #1d6fa5;;
+    background: rgba(33, 125, 187, 0.8);
     z-index: 1
 }
 #lead-down {
@@ -460,10 +464,10 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center;
-    background-color: #3A4750;
+    background-color: #fff;
 }
 #education h2 {
-    color: white;
+    color: #3A4750;
     margin-bottom: 50px
 }
 .education-block {
@@ -477,14 +481,14 @@ footer {
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: white
+    color: #3A4750
 }
 .education-block span {
-    color: white;
+    color: #3A4750;
     float: right
 }
 .education-block h4 {
-    color: white;
+    color: #3A4750;
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0
@@ -492,7 +496,7 @@ footer {
 .education-block p,
 .education-block ul {
     margin: 0;
-    color: white;
+    color: #3A4750;
     font-size: 0.9em
 }
 .education-block ul {
@@ -516,16 +520,19 @@ footer {
     border-radius: 4px
 }
 .project-image {
-    float: left
+    float: left;
 }
 .project-info{
     position: absolute;
-    top: 50%;
+    top: 150%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 10px;
     margin-left: 300px;
-    padding: 15px
+    line-height: 15px;
+    padding-bottom: 600px;
 }
+
 .project-info h3 {
     font-size: 1.5em;
     font-weight: 300;
@@ -550,6 +557,10 @@ footer {
     text-align: center;
 
 }
+#contact .information-contact{
+    float: left;
+}
+
 #contact-form {
     max-width: 500px;
     margin: 0 auto
@@ -642,13 +653,16 @@ footer {
         -webkit-transform: none;
         transform: none;
         left: auto;
-        top: auto
+        top: auto;
+        float: left;
     }
     #lead-content h1 {
-        font-size: 3em
+        font-size: 3em;
+        letter-spacing: 0.05em;
+        float: left;
     }
     #lead-content h2 {
-        font-size: 1.75em
+        font-size: 1.75em;
     }
     #about {
         text-align: center;
@@ -715,7 +729,7 @@ footer {
         color: #686666;
     }
     .social {
-        text-align: center
+        height: auto;
     }
 }
 @media only screen and (max-width: 480px) {
