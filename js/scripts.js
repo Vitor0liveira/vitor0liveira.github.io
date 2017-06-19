@@ -85,6 +85,6 @@
     $('#mobile-menu-close').click(function() {
         $('header, body').removeClass('active');
     });
-       
+}
 })(jQuery);
 
