@@ -161,25 +161,27 @@ footer {
     padding-top: 20px;
 }
 .copyright p {
-    margin: 0;
     color: #74808a;
     float: left;
-    padding: initial;
 }
 
-.top {
-    text-align: center
-}
+
 .top span {
     cursor: pointer;
     display: block;
-    margin: 15px auto 0 auto;
+    margin: 30px auto 0 auto;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #b9bfc4;
-    text-align: center
+    border: 2.5px solid #b9bfc4;
+    text-align: center;
 }
+/*.top span {
+    border-radius: 50%;
+    border: 3px solid #b9bfc4;
+    padding: 5px;
+    text-align: center
+}*/
 .top i {
     color: #74808a
 }
@@ -264,10 +266,12 @@ footer {
     position: absolute;
     z-index: 10;
     top: 50%;
-    left: 50%;
+    /*left: 50%;*/
+    left:40%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;
+    
 }
 #lead-content h1,
 #lead-content h2 {
@@ -297,7 +301,8 @@ footer {
     bottom: 0;
     left: 0;
     background: rgba(33, 125, 187, 0.8);
-    z-index: 1
+    z-index: 1;
+
 }
 #lead-down {
     position: absolute;
@@ -317,7 +322,7 @@ footer {
     height: 35px;
     border-radius: 50%;
     border: 3px solid #a0cfee;
-    text-align: center
+    text-align: center;
 }
 #lead-down i {
     -webkit-animation: pulsate 1.5s ease;
@@ -720,7 +725,8 @@ footer {
         margin: 0;
         top: auto;
         -webkit-transform: none;
-        transform: none
+        transform: none;
+        margin-bottom: -550px;
     }
     footer {
         text-align: center;
@@ -728,6 +734,7 @@ footer {
     }
     .social {
         height: auto;
+        float: right;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -782,6 +789,7 @@ Skils
         right: 0;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: -500px;
         height: 1px;
         width: 50px;
         background: #fff; }
